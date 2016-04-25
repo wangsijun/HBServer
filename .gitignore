@@ -73,3 +73,10 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+node_modules/
+bower_components/
+dist/
+tmp
+.DS_Store/
+.idea/
