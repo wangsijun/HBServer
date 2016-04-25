@@ -1,7 +1,10 @@
 {
-  "name": "HBClient",
+  "name": "HBServer",
   "version": "0.0.1",
   "private": true,
+  "bugs": {
+    "email": "wangsijun1986@vip.qq.com"
+  },
   "dependencies": {
     "async": "~0.9.0",
     "aws-sdk": "~2.0.27",
