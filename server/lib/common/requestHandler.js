@@ -12,7 +12,7 @@ var handler = {
                 if (typeof req.etag !== 'undefined' && req.etag === data.Etag) {
                     res.status(304).end();
                 } else {
-                    res.status(200).send(data);
+                    res.status(200).send({data:data});
                 }
             } else {
                 res.status(404).send({

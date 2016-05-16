@@ -31,7 +31,7 @@ app.use(methodOverride());
 //        '/' + config.version.major + '/user/session'
 //]}));
 
-app.use(express.static(__dirname +'/../../HBClient/client'));
+app.use(express.static(__dirname +'/../../Angularjs/client'));
 
 routes.attachRoutes(app);
 
