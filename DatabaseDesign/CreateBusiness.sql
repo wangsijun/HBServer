@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     2016/5/7 16:09:01                            */
+/* Created on:     2016/5/18 0:01:40                            */
 /*==============================================================*/
 
 
@@ -28,12 +28,13 @@ drop table if exists User;
 create table AdminInfo
 (
    AdminId              bigint not null auto_increment comment '用户Id',
+   UserName             varchar(30) not null comment '用户名',
    NickName             varchar(20) not null comment ' 昵称',
    Password             varchar(255) not null comment '密码',
    Email                varchar(35) comment '邮箱',
    PhoneNumber          varchar(11) comment '手机号',
    AuthorityLevel       smallint not null comment '权限级别',
-   CreateDatetime       datetime not null default CURRENT_TIMESTAMP comment '创建事件',
+   CreateDatetime       datetime not null default CURRENT_TIMESTAMP comment '创建时间',
    LastLoginDatetime    datetime comment '最后登录时间',
    CurrentHost          varchar(30) not null comment '当前设备地址',
    primary key (AdminId)
