@@ -42,11 +42,11 @@ function query(sql,callback){
             var result =new Array();
             for(var values in rows){
                 var row = {};
-                for(var value in rows[values]) {
+                //for(var value in rows[values]) {
                     for (var key in fields) {
                         row[fields[key].name] = rows[values][fields[key].name];
                     }
-                }
+                //}
                 result.push(row);
             }
             callback(null,result);

@@ -5,6 +5,7 @@ var adminModule = {
     getSingleAdmin:getSingleAdmin,
     module:{
         AdminId:"Id",
+        UserName:"name",
         NickName:"nick",
         Password:"pwd",
         Email:"email",
@@ -16,6 +17,7 @@ var adminModule = {
     },
     domain:{
         Id:"AdminId",
+        name:"UserName",
         nick:"NickName",
         pwd:"Password",
         email:"Email",

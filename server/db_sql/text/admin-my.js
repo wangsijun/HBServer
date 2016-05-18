@@ -10,9 +10,9 @@ var adminDb = function(){
     };
 };
 function addAdmin(admin,callback){
-    var query = 'insert into adminInfo(NickName,Password,Email,PhoneNumber,AuthorityLevel,CurrentHost)' +
-        'values(?,?,?,?,?,?)';
-    var params = [admin.NickName, admin.Password, admin.Email, admin.PhoneNumber, admin.AuthorityLevel, '192.168.1.105']
+    var query = 'insert into adminInfo(UserName,NickName,Password,Email,PhoneNumber,AuthorityLevel,CurrentHost)' +
+        'values(?,?,?,?,?,?,?)';
+    var params = [admin.UserName,admin.NickName, admin.Password, admin.Email, admin.PhoneNumber, admin.AuthorityLevel, '192.168.1.105']
     mysql.paramsQuery(query,params,function(err,data) {
         if(err){
             callback(err,null);
